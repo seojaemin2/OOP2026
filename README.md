@@ -4,7 +4,7 @@
 public class Homework1{
   public static void main(String []args){
     int i, j;
-    for(i=0; i<4; i++) {
+    for(i=0; i<10; i++) {
       for(j=0; j<=i; j++) {
         System.out.print("#");
       }
@@ -13,6 +13,8 @@ public class Homework1{
   }
 }
 ```
+<img width="340" height="205" alt="image" src="https://github.com/user-attachments/assets/90e677b9-fa63-4298-82ff-85d41d27c901" />
+
 ```Java
 public class Homework1{
   public static void main(String []args){

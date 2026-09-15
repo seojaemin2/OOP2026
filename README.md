@@ -26,6 +26,8 @@ public class Homework1{
   }
 }
 ```
+<img width="339" height="205" alt="image" src="https://github.com/user-attachments/assets/384bd742-5d4c-4110-bbd5-dde4731e148b" />
+
 ```Java
 public class Homework1{
   public static void main(String []args){

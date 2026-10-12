@@ -31,19 +31,22 @@ public class Homework1{
 <img width="339" height="205" alt="image" src="https://github.com/user-attachments/assets/384bd742-5d4c-4110-bbd5-dde4731e148b" />
 
 ```Java
-public class Homework1{
-  public static void main(String []args){
-    int i, j;
-    for(i=0; i<4; i++) {
-      for(j=0; j<3-i; j++) {
-        System.out.print(" ");
-      }
-      for(j=0; j<=i; j++) {
-    	  System.out.print("#");
-      }
-      System.out.println("");
+public class Homework1 {
+    public static void main(String[] args) {
+        int i, j;
+        for (i = 1; i <= 10; i++) {
+            // 공백 출력
+            for (j = 1; j <= 10 - i; j++) {
+                System.out.print(" ");
+            }
+            // # 출력
+            for (j = 1; j <= i; j++) {
+                System.out.print("#");
+            }
+            System.out.println();
+        }
     }
-  }
+}
 ```
 ```Java
 public class Homework1{

@@ -69,4 +69,4 @@ public class Homework1 {
 }
 ```
 <img width="205" height="166" alt="image" src="https://github.com/user-attachments/assets/126883f3-0578-42fa-b8a8-397718e6f5b4" />
-
+### Homework2

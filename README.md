@@ -51,18 +51,22 @@ public class Homework1 {
 <img width="266" height="168" alt="image" src="https://github.com/user-attachments/assets/24585fec-3c7f-4381-9968-4d6b87685ae3" />
 
 ```Java
-public class Homework1{
-  public static void main(String []args){
-    int i, j;
-    for(i=0; i<4; i++) {
-      for(j=0; j<i; j++) {
-        System.out.print(" ");
-      }
-      for(j=i; j<4; j++) {
-    	  System.out.print("#");
-      }
-      System.out.println("");
+public class Homework1 {
+    public static void main(String[] args) {
+        int i, j;
+        for (i = 1; i <= 10; i++) {
+            // 공백 출력
+            for (j = 1; j < i; j++) {
+                System.out.print(" ");
+            }
+            // # 출력
+            for (j = 10; j >= i; j--) {
+                System.out.print("#");
+            }
+            System.out.println();
+        }
     }
-  }
 }
 ```
+<img width="205" height="166" alt="image" src="https://github.com/user-attachments/assets/126883f3-0578-42fa-b8a8-397718e6f5b4" />
+

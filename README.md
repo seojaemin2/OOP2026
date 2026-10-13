@@ -171,6 +171,35 @@ public class Homework5Madhava {
 ```
 <img width="206" height="98" alt="image" src="https://github.com/user-attachments/assets/b398afd2-166b-4b41-83f3-e6a87165738f" />
 
+### Homework6
+```Java
+
+public class Homework6 {
+    public static void main(String[] args) {
+        int binomial[][] = new int[11][11];
+
+        for (int i = 0; i <= 10; i++) {
+            binomial[i][0] = 1;
+            binomial[i][i] = 1;
+
+            for (int j = 1; j < i; j++) {
+                binomial[i][j] = binomial[i - 1][j - 1]
+                               + binomial[i - 1][j];
+            }
+        }
+
+        for (int i = 0; i <= 10; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print(binomial[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+<img width="229" height="188" alt="image" src="https://github.com/user-attachments/assets/fe7fd2d4-7500-4acb-b07a-999c48f75e0b" />
+
+
 
 
 

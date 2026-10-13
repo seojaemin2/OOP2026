@@ -112,6 +112,9 @@ public class Homework3 {
     }
 }
 ```
+<img width="227" height="272" alt="image" src="https://github.com/user-attachments/assets/5fe869bf-c2c8-44c3-a210-92c41a2a7207" />
+
+### Homework4
 
 
 

@@ -199,6 +199,46 @@ public class Homework6 {
 ```
 <img width="229" height="188" alt="image" src="https://github.com/user-attachments/assets/fe7fd2d4-7500-4acb-b07a-999c48f75e0b" />
 
+### Homework7
+```Java
+
+public class Homework7 {
+    public static void main(String[] args) {
+        int[] num = new int[20];
+
+        // 난수 20개 생성
+        for (int i = 0; i < num.length; i++) {
+            num[i] = (int)(Math.random() * 100);
+        }
+        // 정렬 전 출력
+        System.out.println("정렬 전:");
+        for (int i = 0; i < num.length; i++) {
+            System.out.print(num[i] + " ");
+        }
+        // 선택 정렬
+        for (int i = 0; i < num.length - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j < num.length; j++) {
+                if (num[j] < num[min]) {
+                    min = j;
+                }
+            }
+            int temp = num[i];
+            num[i] = num[min];
+            num[min] = temp;
+        }
+        // 정렬 후 출력
+        System.out.println("\n정렬 후:");
+        for (int i = 0; i < num.length; i++) {
+            System.out.print(num[i] + " ");
+        }
+    }
+}
+```
+<img width="340" height="111" alt="image" src="https://github.com/user-attachments/assets/017c4bb5-f74a-4703-9d04-1b1485233e2c" />
+
+
+
 
 
 

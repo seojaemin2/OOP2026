@@ -152,6 +152,7 @@ public class Homework5 {
 }
 ```
 <img width="192" height="98" alt="image" src="https://github.com/user-attachments/assets/af838eb6-3430-43a5-8b75-583e1ebee0b5" />
+
 ```Java
 public class Homework5Madhava {
     public static void main(String[] args) {

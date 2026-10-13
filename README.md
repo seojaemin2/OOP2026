@@ -237,6 +237,37 @@ public class Homework7 {
 ```
 <img width="340" height="111" alt="image" src="https://github.com/user-attachments/assets/017c4bb5-f74a-4703-9d04-1b1485233e2c" />
 
+### Homework8
+
+```Java
+public class Homework8 {
+    public static void main(String[] args) {
+        int[][] score = new int[30][4];
+
+        // 학생 10명의 과목별 성적 생성
+        for (int i = 0; i < score.length; i++) {
+            for (int j = 0; j < score[i].length; j++) {
+                score[i][j] = (int)(Math.random() * 101);
+            }
+        }
+        // 성적 출력 및 학생별 합계 계산
+        for (int i = 0; i < score.length; i++) {
+            int sum = 0;
+
+            System.out.print((i + 1) + "번 학생: ");
+
+            for (int j = 0; j < score[i].length; j++) {
+                System.out.print(score[i][j] + " ");
+                sum += score[i][j];
+            }
+
+            System.out.println("| 합계: " + sum);
+        }
+    }
+}
+```
+<img width="192" height="387" alt="image" src="https://github.com/user-attachments/assets/03ded50a-e23e-42dc-bb3c-09e1bece107f" />
+
 
 
 

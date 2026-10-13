@@ -71,3 +71,22 @@ public class Homework1 {
 <img width="205" height="166" alt="image" src="https://github.com/user-attachments/assets/126883f3-0578-42fa-b8a8-397718e6f5b4" />
 
 ### Homework2
+```Java
+public class Homework2 {
+    public static void main(String[] args) {
+        int a = 1;
+        int b = 1;
+        int c;
+
+        System.out.print(a + " " + b + " ");
+
+        for (int i = 3; i <= 20; i++) {
+            c = a + b;
+            System.out.print(c + " ");
+
+            a = b;
+            b = c;
+        }
+    }
+}
+```

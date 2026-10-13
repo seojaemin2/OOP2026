@@ -152,6 +152,25 @@ public class Homework5 {
 }
 ```
 <img width="192" height="98" alt="image" src="https://github.com/user-attachments/assets/af838eb6-3430-43a5-8b75-583e1ebee0b5" />
+```java
+public class Homework5Madhava {
+    public static void main(String[] args) {
+        double sum = 1.0;
+
+        for (int i = 1; i < 100; i++) {
+            sum += Math.pow(-1, i) /
+                   ((2 * i + 1) * Math.pow(3, i));
+        }
+
+        double pi = Math.sqrt(12) * sum;
+
+        System.out.println("원주율: " + pi);
+    }
+}
+```
+<img width="206" height="98" alt="image" src="https://github.com/user-attachments/assets/b398afd2-166b-4b41-83f3-e6a87165738f" />
+
+
 
 
 

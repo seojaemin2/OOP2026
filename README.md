@@ -132,6 +132,26 @@ public class Homework4 {
 ```
 <img width="410" height="166" alt="image" src="https://github.com/user-attachments/assets/ca78f34b-b8b2-49e6-83bb-497258c0f1ec" />
 
+### Homework5
+```Java
+
+public class Homework5 {
+    public static void main(String[] args) {
+        double pi = 0.0;
+
+        for (int i = 0; i < 100000; i++) {
+            if (i % 2 == 0) {
+                pi += 4.0 / (2 * i + 1);
+            } else {
+                pi -= 4.0 / (2 * i + 1);
+            }
+        }
+
+        System.out.println("원주율: " + pi);
+    }
+}
+```
+<img width="192" height="98" alt="image" src="https://github.com/user-attachments/assets/af838eb6-3430-43a5-8b75-583e1ebee0b5" />
 
 
 

@@ -115,6 +115,23 @@ public class Homework3 {
 <img width="227" height="272" alt="image" src="https://github.com/user-attachments/assets/5fe869bf-c2c8-44c3-a210-92c41a2a7207" />
 
 ### Homework4
+```Java
+
+public class Homework4 {
+    public static void main(String[] args) {
+        int i, j;
+
+        for (i = 1; i <= 9; i++) {
+            for (j = 1; j <= 9; j++) {
+                System.out.print(j + "*" + i + "=" + (j * i) + "\t");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+<img width="410" height="166" alt="image" src="https://github.com/user-attachments/assets/ca78f34b-b8b2-49e6-83bb-497258c0f1ec" />
+
 
 
 

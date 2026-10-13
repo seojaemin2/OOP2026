@@ -90,3 +90,8 @@ public class Homework2 {
     }
 }
 ```
+<img width="448" height="155" alt="image" src="https://github.com/user-attachments/assets/b88eea37-125d-48f3-8518-a962d758bf3d" />
+
+### Homework3
+
+

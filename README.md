@@ -93,5 +93,25 @@ public class Homework2 {
 <img width="448" height="155" alt="image" src="https://github.com/user-attachments/assets/b88eea37-125d-48f3-8518-a962d758bf3d" />
 
 ### Homework3
+```Java
+public class Homework3 {
+    public static void main(String[] args) {
+        int a = 1;
+        int b = 1;
+        int c;
+
+        for (int i = 1; i <= 20; i++) {
+            c = a + b;
+
+            double ratio = (double) c / b;
+            System.out.println(c + "/" + b + "=" + ratio);
+
+            a = b;
+            b = c;
+        }
+    }
+}
+```
+
 
 

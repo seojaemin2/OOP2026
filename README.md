@@ -268,8 +268,59 @@ public class Homework8 {
 ```
 <img width="192" height="387" alt="image" src="https://github.com/user-attachments/assets/03ded50a-e23e-42dc-bb3c-09e1bece107f" />
 
+### Homework10
+```Java
+public class Homework10 {
+    public static void main(String[] args) {
+        int array_count, max_value, bin_size, display_scale, hist_size;
 
+        if (args.length != 4) {
+            System.out.println("실행 인자 4개를 입력하세요.");
+            return;
+        }
 
+        array_count = Integer.parseInt(args[0]);
+        max_value = Integer.parseInt(args[1]);
+        bin_size = Integer.parseInt(args[2]);
+        display_scale = Integer.parseInt(args[3]);
+
+        hist_size = max_value / bin_size;
+
+        int[] arr = new int[array_count];
+        int[] hist = new int[hist_size];
+
+        // 난수 데이터 생성
+        for (int i = 0; i < array_count; i++) {
+            arr[i] = (int)(Math.random() * max_value);
+        }
+
+        // 생성한 데이터 출력
+        System.out.println("데이터:");
+        for (int i = 0; i < array_count; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+
+        // 구간별 데이터 개수 계산
+        for (int i = 0; i < array_count; i++) {
+            hist[arr[i] / bin_size]++;
+        }
+
+        // 도수분포표 출력
+        System.out.println("도수분포표:");
+        for (int i = 0; i < hist_size; i++) {
+        	System.out.printf("%02d~%02d: ", i * bin_size,
+                    (i + 1) * bin_size - 1);
+        	
+            for (int j = 0; j < hist[i] / display_scale; j++) {
+                System.out.print("#");
+            }
+
+            System.out.println(" (" + hist[i] + ")");
+        }
+    }
+}
+```
 
 
 

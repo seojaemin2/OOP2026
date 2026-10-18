@@ -321,6 +321,8 @@ public class Homework10 {
     }
 }
 ```
+<img width="548" height="212" alt="image" src="https://github.com/user-attachments/assets/9253ed70-a77e-4f2f-bee7-c029d09c48c1" />
+
 
 
 

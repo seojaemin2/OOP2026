@@ -414,6 +414,81 @@ public class Homework11 {
 ```
 <img width="189" height="122" alt="image" src="https://github.com/user-attachments/assets/3df23f0d-939b-47da-85e4-d091d38e96c4" />
 
+### Homework13
+```Java
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Homework13 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            String inputString = scanner.nextLine();
+
+            if (inputString.equals("exit")) {
+                break;
+            }
+
+            String[] arrOfStr = inputString.split(" ");
+            ArrayList<String> tokens = new ArrayList<>();
+
+            for (String a : arrOfStr) {
+                tokens.add(a);
+            }
+
+            // 곱셈과 나눗셈 먼저 계산
+            for (int i = 1; i < tokens.size() - 1; ) {
+                String op = tokens.get(i);
+
+                if (op.equals("#") || op.equals("/")) {
+                    double a = Double.parseDouble(tokens.get(i - 1));
+                    double b = Double.parseDouble(tokens.get(i + 1));
+                    double result;
+
+                    if (op.equals("#")) {
+                        result = a * b;
+                    } else {
+                        result = a / b;
+                    }
+
+                    tokens.set(i - 1, Double.toString(result));
+                    tokens.remove(i);
+                    tokens.remove(i);
+                } else {
+                    i += 2;
+                }
+            }
+
+            // 덧셈과 뺄셈 계산
+            double result = Double.parseDouble(tokens.get(0));
+
+            for (int i = 1; i < tokens.size(); i += 2) {
+                String op = tokens.get(i);
+                double num = Double.parseDouble(tokens.get(i + 1));
+
+                if (op.equals("+")) {
+                    result += num;
+                } else if (op.equals("-")) {
+                    result -= num;
+                } else {
+                    System.out.println("잘못된 연산자: " + op);
+                    result = Double.NaN;
+                    break;
+                }
+            }
+
+            if (!Double.isNaN(result)) {
+                System.out.println(result);
+            }
+        }
+
+        scanner.close();
+    }
+}
+```
+<img width="172" height="207" alt="image" src="https://github.com/user-attachments/assets/a57afee3-d29f-4428-826c-94b33e19c059" />
+
 
 
 

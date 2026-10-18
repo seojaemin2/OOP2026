@@ -323,6 +323,97 @@ public class Homework10 {
 ```
 <img width="548" height="212" alt="image" src="https://github.com/user-attachments/assets/9253ed70-a77e-4f2f-bee7-c029d09c48c1" />
 
+### Homework11
+```Java
+public class Homework11 {
+	public static void main(String[] args) {
+		int array_count;
+
+		if (args.length != 1)
+			return;
+
+		array_count = Integer.parseInt(args[0]);
+		int[] arr = new int[array_count];
+
+		for (int i = 0; i < array_count; i++) {
+			arr[i] = (int)(Math.random() * 100);
+		}
+
+		for (int i = 0; i < array_count; i++) {
+			System.out.print(arr[i] + " ");
+		}
+		System.out.println();
+
+		// 산술평균
+		double sum = 0;
+
+		for (int i = 0; i < array_count; i++) {
+			sum += arr[i];
+		}
+
+		System.out.printf("arithmetic mean = %f\n",
+                      	sum / array_count);
+
+		// 기하평균
+		double prod = 1;
+
+		for (int i = 0; i < array_count; i++) {
+			prod *= arr[i];
+		}
+
+		System.out.printf("geometric mean = %f\n",
+				Math.pow(prod, (double)1 / array_count));
+
+		// 조화평균
+		double harmonic_sum = 0;
+		boolean hasZero = false;
+
+		for (int i = 0; i < array_count; i++) {
+     	  if (arr[i] == 0) {
+     		  hasZero = true;
+     		  break;
+     	  }
+     	  harmonic_sum += 1.0 / arr[i];
+		}
+
+		if (hasZero) {
+			System.out.println("harmonic mean = 계산 불가 (0 포함)");
+		} else {
+			System.out.printf("harmonic mean = %f\n",
+					array_count / harmonic_sum);
+		}
+
+		// 중앙값을 위해 오름차순 정렬
+  	 for (int i = 0; i < array_count - 1; i++) {
+  		 int min = i;
+
+  		 for (int j = i + 1; j < array_count; j++) {
+  			 if (arr[j] < arr[min]) {
+  				 min = j;
+  			 }
+  		 }
+
+  		 int temp = arr[i];
+  		 arr[i] = arr[min];
+  		 arr[min] = temp;
+  	 }
+
+  	 // 중앙값
+  	 double median;
+
+  	 if (array_count % 2 == 1) {
+  		 median = arr[array_count / 2];
+  	 } else {
+  		 median = (arr[array_count / 2 - 1]
+  				 + arr[array_count / 2]) / 2.0;
+  	 }
+
+  	 System.out.printf("median = %f\n", median);
+	}
+}
+```
+<img width="189" height="122" alt="image" src="https://github.com/user-attachments/assets/3df23f0d-939b-47da-85e4-d091d38e96c4" />
+
 
 
 
